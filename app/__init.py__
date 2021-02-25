@@ -1,0 +1,4 @@
+from flask import flask
+
+#initializing the application
+app=Flask(__name__)
