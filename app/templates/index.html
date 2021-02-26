@@ -9,6 +9,22 @@
     {%endif%}
 </head>
 <body>
+    <!-- Content block -->
+
+        {% block content %}
+        <div class="container landing-content">
+            <div class="list-group list-group-flush"></div>
+                <h3 class="News"> News Sources</h3>
+                <br>
+            {% for general_category in general %}
     
+            <a href="/newsarticle/{{general_category.id}}"
+                class="list-group-item list-group-item-action sorces " style="width: 20rem;">{{general_category.name}}</a>
+            {% endfor %}
+    
+            </div>
+        </div> 
+
+        {% endblock%} 
 </body>
 </html>
